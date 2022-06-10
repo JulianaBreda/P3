@@ -3,6 +3,6 @@
     "sass": "^1.51.0"
   },
   "scripts": {
-    "sass": "sass --watch ./sass/styles.sass:./css/styles.css"
+    "sass": "sass --watch ./sass/styles.scss:./css/styles.css"
     }
 }

@@ -1,0 +1,29 @@
+.footer {
+    background-color: #363636;
+    padding: 20px;
+    &__image{
+        filter: opacity(0.4) drop-shadow(0 0 0 white); 
+        height: 50px;
+        
+    }
+    &__list{
+        list-style: none;
+        padding-left: 5px;
+        @media screen and (max-width: 1000px) {
+            width: 500px;   
+        }
+    }
+    &__item{
+        
+        padding: 5px;
+    }
+    &__icon{
+        display: inline-block;
+        padding-right: 5px;
+        color: white;
+    }
+   &__a, a:link, a:visited, a:focus, a:hover, a:active{
+    color:white;
+    text-decoration:none; 
+   }
+}

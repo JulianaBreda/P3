@@ -32,4 +32,18 @@ body {
   text-decoration: none;
 }
 
+.header {
+  background-color: pink;
+  height: 300px;
+}
+.nav {
+  background-color: white;
+  height: 300px;
+}
+.nav__item {
+  list-style: none;
+  padding: 10px;
+  color: grey;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -9,33 +9,36 @@
    <!--GOOGLE FONTS-->
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
    <!--css-->
+   <link rel="stylesheet" href="./css/normalize.css">
    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
    <!--HEADER-->
-   <header>
-      <img src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
+   <header class="header">
+      <div class="header__logo">
+         <img src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
+      </div>
       <!--FORMULAIRE RECHERCHE-->
-      <div class="form">
-         <div class="form__icon">
+      <div class="header__form">
+         <div class="header__form__icon">
              <i class="fa-solid fa-location-dot">
              </i>
          </div>
       </div>
-         <div class="form__input">
+         <div class="header__form__input">
              <input type="text" placeholder="Paris, Bellevile">
          </div>
       <h1>Réservez le menu qui vous convient
          </h1>
          <p>Découvrez des restaurants d'exception, séléctionnés par nos soins
             </p>
-      <div class="form__button">
+      <div class="header__form__button">
             <button type="submit">Exporer nos restaurants
               </button>
       </div>
    </header>
    <!--MENU NAVIGATION-->
-   <nav>
+   <nav class="nav">
       <h1 class="nav__title">Fonctionnement
          </h1>
             <ul class="nav__list">

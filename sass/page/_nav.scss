@@ -1,9 +1,26 @@
 .nav{
     background-color: white;
     height: 300px;
+    &__title{
+        padding-left: 25px;
+    }
     &__item{
+        border-radius: 18px;
+        background-color: $grey;
+        width: 94%;
+        height: 70px;
+        margin: 15px;
+    }
+    &__icon__first{
+        color:$purple
+    }
+    &__icon__second{       
         list-style: none;
-        padding: 10px;
-        color: grey;
+        display: inline-block;
+        padding: 20px; 
+        color: $lightgrey    
+    }
+    &__content{
+        display: inline-block;
     }
 }

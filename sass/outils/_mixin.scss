@@ -1,0 +1,11 @@
+@mixin shadow {
+    box-shadow: 0 0 5px 0 $blacktransparent;
+    -webkit-box-shadow: 0 0 5px 0 $blacktransparent;
+    -moz-box-shadow: 0 0 5px 0 $blacktransparent;
+}
+@mixin flex ($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

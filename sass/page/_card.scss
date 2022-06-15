@@ -1,0 +1,28 @@
+.card{
+    width: 92%;
+    height: 330px;
+    border-radius: 15px;
+    background-color: $white;
+    margin: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    &__image{
+        height: 230px;
+        margin: 0 auto;
+        object-fit:contain;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+    }
+    &__title{
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    &__description{
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    &__a, a:link, a:visited, a:focus, a:hover, a:active{
+        text-decoration:none;
+        color: black;
+       }
+}
+

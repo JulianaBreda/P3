@@ -1,26 +1,34 @@
 .nav{
     background-color: white;
-    height: 300px;
-    &__title{
-        padding-left: 25px;
-    }
+    height: 400px;
+    
     &__item{
         border-radius: 18px;
         background-color: $grey;
         width: 94%;
-        height: 70px;
-        margin: 15px;
+        height: 75px;
+        margin: 30px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     }
     &__icon__first{
+        display: flex;
         color:$purple
     }
     &__icon__second{       
-        list-style: none;
         display: inline-block;
         padding: 20px; 
-        color: $lightgrey    
+        color: $lightgrey;
+        font-size: 25px;    
     }
     &__content{
         display: inline-block;
+
+    }
+    &__a, a:link, a:visited, a:focus, a:hover, a:active{
+        color: black;
+        text-decoration:none; 
+       }
+    &__a, a:hover{
+        background-color: $lavender;
     }
 }

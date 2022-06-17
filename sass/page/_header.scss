@@ -1,6 +1,6 @@
 .header{
     background-color:$grey;
-    height: 300px;
+    height: 350px;
     @include flex (column,flex-start,center);
     &__logo {
         @include shadow;
@@ -11,14 +11,6 @@
         img {
             width: 200px
         }
-        &__form__icon{
-            display: inline-block;
-        }
-        &__icon{
-            position: absolute;
-            margin: 15px;
-            top: 0;
-            left: 0;
-        }
+
     }
 }

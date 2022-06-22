@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
    <!--css-->
    <link rel="stylesheet" href="./css/normalize.css">
-   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
    <header>
@@ -24,14 +24,19 @@
              <img src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
           </div>
       </nav>
+         <div class="image">
+            <img src="./images/restaurants/a-la-francaise.jpg" alt="a-la-francaise-image">
+         </div>
     </header>
    <main>
       <!--menu bloc-->
       <div class="container">
          <h1 class="container__title">À la française
             </h1>
-               <i class="fa-regular fa-heart">
-                  </i>
+               <div class="container__icon">
+                  <i class="fa-regular fa-heart">
+                     </i>
+               </div>            
          <!--first menu bloc-->
                <div class="container__child">
                   <h2 class="container__child__title">entrées
@@ -41,18 +46,24 @@
                               </h3>
                                  <p class="container__child__description">Aux zests d'orange
                                     </p>
+                                       <div class="container__child__information">25€
+                                       </div>
                      </div>
-                     <div class="containder__child__bloc">
+                     <div class="container__child__bloc">
                         <h3 class="container__child__name">Velouté de légumes d'antan
                            </h3>
                               <p class="container__child__description">Carotte, panais, topinambour                     
                                  </p>
+                                    <div class="container__child__information">35€
+                                    </div>
                      </div>
                      <div class="container__child__bloc">
                         <h3 class="container__child__name">Soupe à l'oignon
                            </h3>
                               <p class="container__child__description">Revisitée
                                  </p>
+                                    <div class="container__child__information">20€
+                                    </div>
                      </div>
                </div>
          <!--second menu bloc-->
@@ -64,18 +75,24 @@
                         </h3>
                            <p class="container__child__description">Accompagnées d'une purée de panais
                               </p>
+                                 <div class="container__child__information">40€
+                                 </div>
                </div>
-               <div class="containder__child__bloc">
+               <div class="container__child__bloc">
                   <h3 class="container__child__name">Magret de canard
                      </h3>
                         <p class="container__child__description">Et parmentier de pommes de terres                   
                            </p>
+                              <div class="container__child__information">35€
+                              </div>
                </div>
                <div class="container__child__bloc">
                   <h3 class="container__child__name">Pigeonneau d'Elle-et-Vilaine
                      </h3>
                         <p class="container__child__description">Sur son lit de gnocchis aux légumes
                            </p>
+                              <div class="container__child__information">44€
+                              </div>
                </div>
          </div>              
          <!--third menu bloc-->
@@ -87,22 +104,28 @@
                         </h3>
                            <p class="container__child__description">Et purée de noisettes
                               </p>
+                                 <div class="container__child__information">18€
+                                 </div>
                </div>
-               <div class="containder__child__bloc">
+               <div class="container__child__bloc">
                   <h3 class="container__child__name">Fondant au chocolat
                      </h3>
                         <p class="container__child__description">Revisité                  
                            </p>
+                              <div class="container__child__information">22€
+                              </div>
                </div>
                <div class="container__child__bloc">
                   <h3 class="container__child__name">Millefeuille croustillant
                      </h3>
                         <p class="container__child__description">Myrtilles et pate d'amande
                            </p>
+                              <div class="container__child__information">23€
+                              </div>
                </div>
          </div>
          <!--command button-->
-         <div class="form__button">
+         <div class="button">
             <button type="submit">Commander
               </button>
          </div>

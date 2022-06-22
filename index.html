@@ -19,21 +19,21 @@
          <img src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
       </div>
       <!--FORMULAIRE RECHERCHE-->
-      <div class="header__form">
+      <form method="POST" action="traitement.php" class="header__form">
          <div class="header__form__icon">
-             <i class="fa-solid fa-location-dot">
-             </i>
-         </div>
-      </div>
-         <div class="header__form__input">
-             <input type="text" placeholder="Paris, Bellevile">
-         </div>
-      <h1>Réservez le menu qui vous convient
+            <i class="fa-solid fa-location-dot">
+            </i>
+        </div>
+         <input type="text" placeholder="Paris, Bellevile" class="header__form__input">
+         <input type="submit" value="Rechercher" class="header__form__submit">
+      </form>
+         
+      <h1 class="header__title">Réservez le menu qui vous convient
          </h1>
          <p>Découvrez des restaurants d'exception, séléctionnés par nos soins
             </p>
-      <div class="header__form__button">
-            <button type="submit">Exporer nos restaurants
+      <div class="button">
+            <button type="submit">Explorer nos restaurants
               </button>
       </div>
    </header>
@@ -42,47 +42,38 @@
       <h1 class="nav__title">Fonctionnement
          </h1>
             <div class="nav__item">
-               <a href="#">
-                  <div class="nav__icon__first">
-                     <i class="fa-solid fa-circle-1">
-                     </i>
-                  </div>
-                     <div class="nav__icon__second">
-                        <i class="fa-solid fa-mobile-screen-button">
-                           </i>
-                     </div>
-                        <div class="nav__content">Choisissez un restaurant
-                        </div>
-            </a>
-         </div>
-         <div class="nav__item">
-            <a href="#">
-               <div class="nav__icon__first">
-                  <i class="fa-solid fa-circle-2">
-                     </i>
+               <div class="nav__number">1
                </div>
-               <div class="nav__icon__second">
-                  <i class="fa-solid fa-list">               
-                     </i>
-               </div>
-            <div class="nav__content">Composez votre menu
-               </div>
-            </a>
-         </div>
-         <div class="nav__item">
-            <a href="#">
-               <div class="nav__icon__first">
-                  <i class="fa-solid fa-circle-3">
-                     </i>
-               </div>
-               <div class="nav__icon__second">
-                  <i class="fa-solid fa-store">
-                     </i>
+                     <div class="nav__icon">
+                           <i class="fa-solid fa-mobile-screen-button">
+                              </i>
+                      </div>
+                           <div class="nav__content">Choisissez un restaurant
+                              </div>
             </div>
-            <div class="nav__content">Dégustez au restaurant            
-               </div>
+            <div class="nav__item">       
+               <div class="nav__number">2
+               </div>        
+                  <div class="nav__icon">
+                     <i class="fa-solid fa-list">               
+                        </i>
+                  </div>
+                     <div class="nav__content">Composez votre menu
+                        </div>
+            </div> 
+            <div class="nav__item">
+               <div class="nav__number">3
+                  </div>
+                  <div class="nav__icon">
+                     <i class="fa-solid fa-store">
+                        </i>
+            </div>
+               <div class="nav__content">Dégustez au restaurant            
+                  </div>
          </div>   
-      </a>      
+         
+        
+            
    </nav>
    <!--MAIN SECTION-->
    <main>

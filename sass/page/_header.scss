@@ -1,6 +1,6 @@
 .header{
     background-color:$grey;
-    height: 350px;
+    height: 450px;
     @include flex (column,flex-start,center);
     &__logo {
         @include shadow;
@@ -11,6 +11,35 @@
         img {
             width: 200px
         }
-
     }
+    &__form{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $lightgrey;
+        box-shadow: $shadow-effect;    
+    }
+    &__form__icon{    
+        font-size: 22px;
+    }
+    &__form__input{
+        background-color: $lightgrey;
+        border: none;
+        outline: none;
+        padding: 15px; 
+        width: 150px;
+    }
+    &__form__input::placeholder{
+        font-weight: bold;
+        text-align: center;
+    }
+    &__form__submit{
+        display: none;
+    }
+    
+    &__title{
+        text-align: center;
+    }
+   
+
 }

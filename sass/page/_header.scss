@@ -17,7 +17,8 @@
         align-items: center;
         justify-content: center;
         background-color: $lightgrey;
-        box-shadow: $shadow-effect;    
+        box-shadow: $shadow-effect; 
+        width: 100%;   
     }
     &__form__icon{    
         font-size: 22px;
@@ -30,7 +31,6 @@
         width: 150px;
     }
     &__form__input::placeholder{
-        font-weight: bold;
         text-align: center;
     }
     &__form__submit{
@@ -40,6 +40,7 @@
     &__title{
         text-align: center;
     }
+    
    
 
 }

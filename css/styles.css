@@ -7,19 +7,59 @@ h1 {
 }
 
 button {
-  border-radius: 30px;
+  border-radius: 40px;
   font-size: 16px;
   color: #ffffff;
   margin: 20px;
   padding: 15px;
   border: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom right, #9356dc, #ff79da);
 }
-button button:hover {
-  opacity: 0.3;
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.image img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+like-button {
+  display: inline-block;
+  position: relative;
+  right: 10px;
+  cursor: pointer;
+}
+
+.like-button ::before {
+  right: 5px;
+  top: 77%;
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.like-button::after {
+  color: #9356dc;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s;
+}
+
+.like-button.liked::after {
+  color: #9356dc;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .container {
@@ -131,17 +171,29 @@ button button:hover {
   margin: 35px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   position: relative;
+  margin-block-end: 40px;
 }
 .card__image {
-  max-width: 100%;
   height: 250px;
   margin: 0 auto;
-  object-fit: contain;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
 }
 .card__image img {
-  object-fit: scale-down;
+  max-width: 100%;
+  height: 100% object-fit cover;
+}
+.card__banner {
+  background-color: #99e2d0;
+  color: #4f9e8b;
+  padding: 10px;
+  font-size: 18px;
+  width: 80px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border-radius: 3px;
+  text-align: center;
 }
 .card__title {
   display: inline-block;
@@ -151,12 +203,7 @@ button button:hover {
 .card__description {
   text-decoration: none;
   padding-left: 8px;
-}
-.card__icon {
-  display: inline-block;
-  font-size: 32px;
-  position: absolute;
-  right: 10px;
+  margin: 0;
 }
 .card__a, .card a:link, .card a:visited, .card a:focus, .card a:hover, .card a:active {
   text-decoration: none;
@@ -192,6 +239,7 @@ button button:hover {
   justify-content: center;
   background-color: lightgrey;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .header__form__icon {
   font-size: 22px;
@@ -204,7 +252,6 @@ button button:hover {
   width: 150px;
 }
 .header__form__input::placeholder {
-  font-weight: bold;
   text-align: center;
 }
 .header__form__submit {

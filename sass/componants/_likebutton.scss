@@ -1,0 +1,23 @@
+like-button{
+    display: inline-block;
+    position: relative;
+    right: 10px;
+    cursor: pointer;          
+}
+.like-button ::before{
+    right: 5px;
+    top: 77%;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.like-button::after{
+    color:$purple;
+    
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s;
+}
+.like-button.liked::after {
+    color: $purple;
+transform: translate(-50%, -50%) scale(1.1);
+}

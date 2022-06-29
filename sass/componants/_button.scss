@@ -1,15 +1,23 @@
 button{
-    border-radius: 30px;
+    
+    border-radius: 40px;
     font-size: 16px;
     color: $white;
     margin: 20px;
     padding: 15px;
     border: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     box-shadow: $shadow-effect;
     background-image: linear-gradient( to bottom right, $purple,$pink );
-    button:hover{
-        opacity: 0.3;
-    }
 }
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.button:hover {
+    opacity: 0.5;
+  }

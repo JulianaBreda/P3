@@ -1,0 +1,24 @@
+.spinner{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+    &__half1 {
+        box-sizing: border-box;
+        border-radius: 50%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 8px solid transparent;
+        border-top-color: $purple;
+        animation: spinner 1.5s linear
+}
+    &__half2{
+        border: 8px solid transparent;
+}
+
+@keyframes spinner {
+    0% {transform: rotate(0deg); border-width: 8px;}
+    50% {transform: rotate(180deg); border-width: 2px;}
+    100% {transform: rotate(360deg); border-width: 8px;}    
+}

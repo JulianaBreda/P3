@@ -10,7 +10,7 @@ button{
     justify-content: space-around;
     align-items: center;
     box-shadow: $shadow-effect;
-    background-image: linear-gradient( to bottom right, $purple,$pink );
+    background-image: $gradientcolor;
 }
 .button{
     display: flex;

@@ -172,6 +172,12 @@ button {
     opacity: 1;
   }
 }
+.cards-info {
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .cards-content {
   padding: 18px;
   position: relative;
